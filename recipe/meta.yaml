@@ -1,5 +1,5 @@
 {% set name = "jaraco.text" %}
-{% set version = "3.1" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c7effed0f269e8bdae3374a7545763e84c1e7f9777cf2dd2d49eef92eb0d7b7
+  sha256: e5078b1126cc0f166c7859aa75103a56c0d0f39ebcafc21695615472e0f810ec
 
 build:
   number: 0
