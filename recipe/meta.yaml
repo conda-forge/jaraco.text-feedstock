@@ -1,5 +1,5 @@
 {% set name = "jaraco.text" %}
-{% set version = "3.2.0" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,21 +7,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e5078b1126cc0f166c7859aa75103a56c0d0f39ebcafc21695615472e0f810ec
+  sha256: 93f261d764cfc2626eb9ca00dbd2dec505631960cba150c927ef1465050f548f
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python
     - pip
-    - setuptools_scm >=1.15
+    - setuptools_scm >=3.4.1
   run:
     - python
     - jaraco.functools
-    - six
     - importlib_resources  # [py<37]
 
 test:
@@ -33,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Module for text manipulation'
+  summary: Module for text manipulation
   doc_url: https://jaracotext.readthedocs.io/
   dev_url: https://github.com/jaraco/jaraco.text
 
