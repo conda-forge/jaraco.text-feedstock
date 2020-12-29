@@ -17,11 +17,10 @@ requirements:
   host:
     - python
     - pip
-    - setuptools_scm >=1.15
+    - setuptools_scm >=3.4.1
   run:
     - python
     - jaraco.functools
-    - six
     - importlib_resources  # [py<37]
 
 test:
