@@ -15,13 +15,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools_scm >=3.4.1
+    - toml
   run:
-    - python
+    - python >=3.6
     - jaraco.functools
-    - importlib_resources  # [py<37]
+    - importlib_resources  # [py<39]
 
 test:
   imports:
