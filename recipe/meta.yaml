@@ -12,14 +12,15 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  skip: True  # [py<36]
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
     - setuptools_scm >=3.4.1
   run:
-    - python >=3.6
+    - python
     - jaraco.functools
     - importlib_resources  # [py<39]
 
