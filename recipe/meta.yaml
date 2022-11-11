@@ -27,6 +27,9 @@ requirements:
     - jaraco.functools
     - jaraco.context >=4.1
     - importlib_resources  # [py<39]
+    - autocommand
+    - inflect
+    - more-itertools
 
 test:
   imports:
