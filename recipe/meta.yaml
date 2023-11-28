@@ -29,6 +29,7 @@ requirements:
     - importlib_resources  # [py<39]
     - autocommand
     - inflect
+    - more-itertools
 
 test:
   imports:
