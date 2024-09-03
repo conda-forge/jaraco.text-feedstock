@@ -10,7 +10,7 @@ source:
   sha256: 389e25c8d4b32e9715bf530596fab0f5cd3aa47296e43969392e18a541af592c
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37]
 
@@ -20,6 +20,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
+    - setuptools
     - pip
     - setuptools_scm >=3.4.1
   run:
