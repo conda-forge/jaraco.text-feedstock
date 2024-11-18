@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jaraco_text-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jaraco_text-{{ version }}.tar.gz
   sha256: 5b71fecea69ab6f939d4c906c04fee1eda76500d1641117df6ec45b865f10db0
 
 build:
