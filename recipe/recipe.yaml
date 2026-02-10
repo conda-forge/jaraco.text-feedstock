@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 4.0.0
+  version: "4.2.0"
 
 package:
   name: jaraco.text
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jaraco.text/jaraco_text-${{ version }}.tar.gz
-  sha256: 5b71fecea69ab6f939d4c906c04fee1eda76500d1641117df6ec45b865f10db0
+  sha256: 194e386aa5b15a6616019df87a6b29c00fd3c9c8b0475731b64633ca7afd495b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
